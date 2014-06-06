@@ -28,4 +28,4 @@ Please follow the steps below to get this site set up for local development.
 5. Run tests using rspec
 
 ## Running on Heroku:
-1. To run the migrations on heroku, run heroku run rake db:migrate --app project-storefront-staging
+1. To run the migrations on heroku, run heroku run rake db:migrate --app growlers-to-go
