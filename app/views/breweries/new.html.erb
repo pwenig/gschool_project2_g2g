@@ -1,0 +1,23 @@
+<h1>Sign up</h1>
+
+<div class="authentication_form">
+  <h2>Please Register:</h2>
+
+  <ul class="flashes">
+    <% @brewery.errors.full_messages.each do |error| %>
+      <li class="error"><%= error %></li>
+    <% end %>
+  </ul>
+
+  <%= form_for @brewery do |b| %>
+    <%= b.label :name %>
+    <%= b.text_field :name %>
+    <%= b.label :email %>
+    <%= b.email_field :email %>
+    <%= b.label :password %>
+    <%= b.password_field :password %>
+    <%= b.label :password_confirmation %>
+    <%= b.password_field :password_confirmation %>
+    <%= b.submit "Submit" %>
+  <% end %>
+</div>
