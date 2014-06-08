@@ -1,7 +1,6 @@
 class BreweriesController < ApplicationController
 
   def index
-    @brewery = Brewery.all
   end
 
   def new
@@ -10,7 +9,8 @@ class BreweriesController < ApplicationController
 
   def create
     @brewery = Brewery.create(allowed_parameters)
-    redirect_to '/breweries'
+    session[:current_user_id] = @brewery.id
+    redirect_to '/'
   end
 
   def show
