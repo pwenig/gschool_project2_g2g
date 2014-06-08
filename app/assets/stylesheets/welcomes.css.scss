@@ -39,7 +39,7 @@ header {
 }
 
 nav {
-  background-color: red;
+  background-color: darkmagenta;
   overflow: hidden;
 }
 
@@ -113,6 +113,45 @@ footer {
   border-right: 1px solid #000;
 }
 
+.authentication_form {
+  min-width: 300px;
+  max-width: 500px;
+  padding: 3em;
+  margin: 0 auto;
+  margin-top: 8%;
+  border-radius: 5px;
+  background-color: darkmagenta;
+  border: 2px solid #803D44;
+}
+
+.authentication_form h2 {
+  margin-top: 0;
+}
+.authentication_form label {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: .3em;
+}
+
+.authentication_form input {
+  padding: .4em;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  border-color: #FFF0CF;
+  font-size: 20px;
+}
+
+.authentication_form input[type="submit"] {
+  padding: .3em .6em;
+  width: 8em;
+  margin-top: 1.2em;
+  background-color: black;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
 
 
 

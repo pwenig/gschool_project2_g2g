@@ -8,6 +8,26 @@
 </head>
 <body>
 
+<h1><a href="/">Growlers to Go</a></h1>
+
+<nav>
+  <div id="nav_container">
+
+    <ul id="menu">
+      <% if @current_user %>
+        <li><a href="#">Welcome, <%= @current_user.email %></a></li>
+
+        <li><%= link_to 'Logout', brewery_login_path(@current_user.id), method: :delete %></li>
+      <% else %>
+        <li><a href="/brewery_login/new">Login</a></li>
+        <li><%= link_to 'Register', new_brewery_path %></li>
+      <% end %>
+    </ul>
+  </div>
+  <!--end navigation-->
+</nav>
+
+
 <%= yield %>
 
 </body>
