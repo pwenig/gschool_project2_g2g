@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   resources :breweries
   resources :brewery_login
+  resources :products
 end

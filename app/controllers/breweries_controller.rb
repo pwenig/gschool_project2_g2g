@@ -10,7 +10,7 @@ class BreweriesController < ApplicationController
   def create
     @brewery = Brewery.create(allowed_parameters)
     session[:current_user_id] = @brewery.id
-    redirect_to '/'
+    redirect_to '/products'
   end
 
   def show
