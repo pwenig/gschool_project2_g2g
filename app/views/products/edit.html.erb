@@ -1,0 +1,20 @@
+<div class="authentication_form">
+  <h2>Edit Product:</h2>
+
+  <%= form_for @product do |p| %>
+    <ul class="flashes">
+      <% @product.errors.full_messages.each do |error| %>
+        <li class="error"><%= error %></li>
+      <% end %>
+    </ul>
+
+
+    <%= p.label :name %>
+    <%= p.text_field :name, value: @product.name %>
+    <%= p.label :description %>
+    <%= p.text_area :description, :size =>"72x10", :length => 500, value: @product.description %>
+    <%= p.label :abv %>
+    <%= p.text_field :abv, value: @product.abv %>
+    <%= p.submit 'Submit' %>
+  <% end %>
+</div>

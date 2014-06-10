@@ -15,9 +15,20 @@ class ProductsController < ApplicationController
     else
       render :new
     end
+  end
 
+  def show
+    @product = Product.find(params[:id])
+  end
 
+  def edit
+    @product = Product.find(params[:id])
+  end
 
+  def update
+    @product = Product.find(params[:id])
+    @product.update_attributes(allowed_parameters)
+    redirect_to '/products'
   end
 
 

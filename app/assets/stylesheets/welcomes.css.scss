@@ -160,13 +160,16 @@ footer {
 
 .content_container {
   width: 100%;
-  background-color: white;
+  background-color: ghostwhite;
 }
 
 .product_container {
   margin-top: 30px;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 2em;
+  background-color: ghostwhite;
+  width: auto;
 }
 
 .product_container a:first-child {
@@ -201,12 +204,13 @@ footer {
 .product_picture_large {
   display: inline-block;
   margin: .5em;
-  width: 400px;
+  width: 250px;
   text-align: right;
 }
 
 .product_picture_large img {
-  height: 360px;
+  height: 260px;
+  border:1px solid #021a40;
 }
 
 
