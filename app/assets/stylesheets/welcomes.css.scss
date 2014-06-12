@@ -39,7 +39,9 @@ body {
 }
 
 nav {
-  background-color: darkmagenta;
+  background-image: url('beer.png');
+  background-size: 10em 9em;
+  background-repeat: none;
   overflow: hidden;
 }
 
@@ -95,14 +97,14 @@ footer {
 #menu li a {
   font-size: 120%;
   font-weight: bold;
-  color: #fff;
+  color: black;
   padding: 17px 25px 15px 25px;
   display: block;
   text-decoration: none;
 }
 
 #menu li a:hover {
-  color: #fff;
+  color: black;
   background-color: #3b2c2c;
 }
 
