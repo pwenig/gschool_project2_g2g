@@ -13,6 +13,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+gem 'carrierwave', '~> 0.10.0'
+gem 'fog', '~> 1.22.1'
+gem 'dotenv-rails', '~> 0.11.1'
+gem 'rmagick', :require => 'RMagick'
+
 group :test, :development do
   gem 'capybara', '~> 2.2.1'
   gem 'rspec-rails', '~> 2.14.2'

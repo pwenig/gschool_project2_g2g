@@ -27,5 +27,8 @@ Please follow the steps below to get this site set up for local development.
 4. Run migrations in test database with RACK_ENV=test rake db:migrate
 5. Run tests using rspec
 
+Please note that this application is using carrierwave with rmagick. Please install 'imagemagick' prior to using this app through whatever means you use 
+(i.e. if you use homebrew: brew install imagemagick).
+
 ## Running on Heroku:
 1. To run the migrations on heroku, run heroku run rake db:migrate --app growlers-to-go

@@ -1,20 +1,27 @@
 <div class="authentication_form">
   <h2>Add Beer:</h2>
 
-  <%= form_for @product do |p| %>
+  <%= form_for @product, :html => {:multipart => true} do |p| %>
   <ul class="flashes">
     <% @product.errors.full_messages.each do |error| %>
       <li class="error"><%= error %></li>
     <% end %>
   </ul>
-
-
     <%= p.label :name %>
     <%= p.text_field :name %>
+
     <%= p.label :description %>
     <%= p.text_area :description, :size =>"72x10", :length => 500 %>
+
     <%= p.label :abv %>
     <%= p.text_field :abv %>
+
+    <%= p.file_field :image %>
+
+
+    <%= p.label :remote_image_url, "or image url" %>
+    <%= p.text_field :remote_image_url %>
+
     <%= p.submit 'Submit' %>
   <% end %>
 </div>

@@ -7,7 +7,7 @@
   <% @products.each do |product| %>
     <div class="product_container">
       <div class="product_picture_small">
-        <img src='http://upslopebrewing.com/wp-content/uploads/cache/2012/03/upslope-craft-lager/-195619099.png'>
+        <%= image_tag product.image.to_s %>
       </div>
       <!--end product_picture-->
 
@@ -21,6 +21,7 @@
         <li>
           <%= product.abv %>
         </li>
+
       </div>
       <!--end product_description-->
     </div>
