@@ -14,7 +14,7 @@
 
 body {
   background-color: white;
-  background-image: asset-url('neighborhood.JPG');
+  background-image: asset-url('barley.png');
   background-size: cover;
 }
 
@@ -50,10 +50,11 @@ nav {
 }
 
 #tag_line img {
-  margin-top: 5%;
+//  margin-top: .5%;
+  margin-bottom: 10%;
   margin-left: 25%;
   height: 30em;
-  width: 40em;
+  width: 50em;
 }
 footer {
   background-color: orange;
@@ -188,13 +189,13 @@ footer {
   display: inline-block;
   vertical-align: top;
   font-size: 1.2em;
-  line-height: 2em;
+//  line-height: 2em;
+  font-family: ariel;
   margin-left: 20px;
 }
 
 .product_description li {
   list-style-type: none;
-  padding: 1em;
   clear: both;
   overflow: hidden;
 }

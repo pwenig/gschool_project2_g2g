@@ -13,6 +13,7 @@
     <ul id="menu">
       <% if current_user %>
         <li><a href="#">Welcome, <%= current_user.email %></a></li>
+        <li><a href='/products'>View Products</a></li>
         <li><a href='/products/new'>Add Products</a></li>
 
         <li><%= link_to 'Logout', brewery_login_path(current_user.id), method: :delete %></li>
