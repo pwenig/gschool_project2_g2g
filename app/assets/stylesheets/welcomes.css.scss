@@ -14,7 +14,7 @@
 
 body {
   background-color: white;
-  background-image: url('neighborhood.JPG');
+  background-image: asset-url('neighborhood.JPG');
   background-size: cover;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 nav {
-  background-image: url('beer.png');
+  background-image: asset-url("beer.png");
   background-size: 10em 9em;
   background-repeat: none;
   overflow: hidden;
@@ -54,7 +54,6 @@ nav {
   margin-left: 25%;
   height: 30em;
   width: 40em;
-  opacity: .8;
 }
 footer {
   background-color: orange;
@@ -220,12 +219,12 @@ footer {
 .product_picture_large {
   display: inline-block;
   margin: .5em;
-  width: 250px;
+  width: 270px;
   text-align: right;
 }
 
 .product_picture_large img {
-  height: 260px;
+  height: 220px;
   border:1px solid #021a40;
 }
 

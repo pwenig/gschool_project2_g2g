@@ -13,6 +13,9 @@
     <%= p.text_area :description, :size =>"72x10", :length => 500, value: @product.description %>
     <%= p.label :abv %>
     <%= p.text_field :abv, value: @product.abv %>
+    <%= p.file_field :image %>
+    <%= p.label :remote_image_url, "or image url" %>
+    <%= p.text_field :remote_image_url %>
     <%= p.submit 'Submit' %>
   <% end %>
   <%= link_to 'Delete', product_path(@product), method: :delete %>
