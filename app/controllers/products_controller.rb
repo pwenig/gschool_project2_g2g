@@ -31,9 +31,12 @@ class ProductsController < ApplicationController
     redirect_to '/products'
   end
 
+    def destroy
+      @product = Product.destroy(params[:id])
+      redirect_to '/products'
+    end
+  end
 
   def allowed_parameters
     params.require(:product).permit(:name, :description, :abv, :image)
   end
-
-end

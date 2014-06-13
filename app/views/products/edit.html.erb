@@ -7,8 +7,6 @@
         <li class="error"><%= error %></li>
       <% end %>
     </ul>
-
-
     <%= p.label :name %>
     <%= p.text_field :name, value: @product.name %>
     <%= p.label :description %>
@@ -17,4 +15,5 @@
     <%= p.text_field :abv, value: @product.abv %>
     <%= p.submit 'Submit' %>
   <% end %>
+  <%= link_to 'Delete', product_path(@product), method: :delete %>
 </div>
