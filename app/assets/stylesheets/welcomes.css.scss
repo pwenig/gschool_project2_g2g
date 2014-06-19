@@ -22,7 +22,7 @@
 .nav li {
   display: inline;
   color: red;
-  font-size: 80%;
+  font-size: 90%;
   font-weight: bold;
   padding: 17px 25px 15px 25px;
   text-decoration: none;
@@ -85,8 +85,8 @@
   margin: 0 auto;
   margin-top: 8%;
   border-radius: 5px;
-  background-color: darkmagenta;
-  border: 2px solid #803D44;
+  background-color: red;
+  border: 2px solid black;
 }
 
 .authentication_form h2 {
@@ -173,4 +173,9 @@
 .product_picture_large img {
   height: 220px;
   border:1px solid #021a40;
+}
+
+.thumbnail img {
+  height: 200%;
+  width: 200%;
 }
