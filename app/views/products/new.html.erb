@@ -7,6 +7,11 @@
       <li class="error"><%= error %></li>
     <% end %>
   </ul>
+
+    <%= p.label :brewery_id, 'Brewery' %>
+    <%= p.select :brewery_id, Brewery.all.map { |brewery| [brewery.name, brewery.id] },
+                 :include_blank => 'Select a brewery' %>
+
     <%= p.label :name %>
     <%= p.text_field :name %>
 

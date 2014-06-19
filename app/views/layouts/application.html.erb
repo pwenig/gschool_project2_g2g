@@ -5,12 +5,23 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-<body>
 
-<nav>
-  <div id="nav_container">
-    <ul id="menu">
+  <meta charset="UTF-8">
+  <title>Growlers To Go</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+<div class="nav">
+  <div class="container">
+    <ul class="pull-left">
+      <li><a href="/">Growlers to Go</a></li>
+    </ul>
+    <ul class = "pull-right">
       <% if current_user %>
         <li><a href="#">Welcome, <%= current_user.email %></a></li>
         <li><a href='/products'>View Products</a></li>
@@ -20,20 +31,16 @@
       <% else %>
         <li><%= link_to 'Brewery Login', new_brewery_login_path %></li>
       <% end %>
+
     </ul>
   </div>
-  <!--end navigation-->
-</nav>
+</div>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Growlers to Go</h1>
 
-<header>
-  <div id="header_container">
-    <a href="/"><%= image_tag('placeholder.png')%></a>
   </div>
-    <!--end of header container-->
-</header>
-
-
-
+</div>
 
 
 <%= yield %>

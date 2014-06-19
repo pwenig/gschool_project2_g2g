@@ -1,7 +1,11 @@
 class ProductsController < ApplicationController
 
   def index
-  @products = Product.all
+    # if session[:current_user_id]
+    #   # @products = Product.find_by()
+    # else
+      @products = Product.all
+    # end
   end
 
   def new
@@ -31,12 +35,14 @@ class ProductsController < ApplicationController
     redirect_to '/products'
   end
 
-    def destroy
-      @product = Product.destroy(params[:id])
-      redirect_to '/products'
-    end
+  def destroy
+    @product = Product.destroy(params[:id])
+    redirect_to '/products'
   end
 
-  def allowed_parameters
-    params.require(:product).permit(:name, :description, :abv, :image)
-  end
+
+def allowed_parameters
+  params.require(:product).permit(:name, :description, :abv, :image, :brewery_id)
+end
+
+end

@@ -6,7 +6,6 @@ class BreweryLoginController < ApplicationController
     redirect_to root_path
   end
 
-
   def new
     @brewery = Brewery.new
   end
